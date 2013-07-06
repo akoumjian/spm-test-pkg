@@ -1,0 +1,21 @@
+# An example MANIFEST file. The format is in YAML
+# Each section represents a special keyword, ie: 'modules'
+# The list values of each section represent a relative
+# file or directory from the package root to be included
+#
+# Note: The package manager will simply symlink
+# to the correct location for the salt installation.
+modules:
+  - _modules/test_module.py
+states:
+  - _states/test_state.py
+runners:
+  - _runners/test_runner.py
+grains:
+  - _grains/test_grain.py
+formulas:
+  - formulas/named_formula.sls
+pillar:
+  - pillar/named_pillar.sls
+  - pillar/named_folder
+
